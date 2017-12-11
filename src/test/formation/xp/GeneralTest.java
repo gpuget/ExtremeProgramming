@@ -1,4 +1,4 @@
-package com.excilys.formation.xp;
+package formation.xp;
 
 import org.junit.Test;
 
