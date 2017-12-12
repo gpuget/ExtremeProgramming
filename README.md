@@ -22,5 +22,6 @@ Extract file : `tar -zxf <file-name>.tar.gz` or `unzip <file>`
 ### Docs
 
 * [Debian](https://www.debian.org/doc/manuals/refcard/refcard "Debian Doc")
-* [Javadoc](https://docs.oracle.com/javase/8/docs/api/ "Java 8 Doc")
 * [Git](https://git-scm.com/documentation "Git SCM doc")
+* [Javadoc](https://docs.oracle.com/javase/8/docs/api/ "Java 8 Doc")
+* [JUnit](http://junit.org/junit4/javadoc/latest/ "JUnit Doc")
