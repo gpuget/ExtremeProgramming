@@ -11,6 +11,12 @@ You can download an IDE here :
 
 Extract file : `tar -zxf <file-name>.tar.gz` or `unzip <file>`
 
+### Git
+
+* Clone the project : `git clone <target-url>`
+* Create your own project on Github
+* Change the remote branch : `git remote set-url origin <new-url>`
+
 ## Help
 
 ### Cheat sheets
