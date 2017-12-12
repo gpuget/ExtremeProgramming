@@ -9,6 +9,8 @@ You can download an IDE here :
 * [IntelliJ Community](https://www.jetbrains.com/idea/download/)
 * [Sublim Text 3](https://www.sublimetext.com/3)
 
+Extract file : `tar -zxf <file-name>.tar.gz` or `unzip <file>`
+
 ## Help
 
 ### Cheat sheets
