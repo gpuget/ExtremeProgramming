@@ -44,6 +44,17 @@ Après l'extraction, une fois dans le répertoire, vous devez lancer le script `
 * Dans l'onglet _Sources_, sélectionnez _java_ comme source (bleu) et _test_ comme tests (vert)
 * Dans l'onglet _Dependencies_, cochez _junit-4.12.jar_ avec un scope de _Test_
 
+## Scénarii (_User Stories_)
+
+Id | En tant que... | Je veux... | Afin de... | Valeur
+--- | --- | --- | --- | ---
+1 | Joueur | initialiser une partie | commencer à jouer | 100
+1 | Joueur | choisir le nombre de joueurs | initialiser la partie | 100
+1 | Joueur | choisir le nom des joueurs | initialiser la partie | 50
+1 | Joueur | choisir l'ordre des joueurs | initialiser la partie | 20
+1 | Joueur | recevoir 2 cartes en début de tour | constiuer ma main | 100
+1 | Joueur | terminer ma partie au bout d'un certain nombre de tours | limiter le temps de jeux | 50
+
 ## Help
 
 ### Cheat sheets
