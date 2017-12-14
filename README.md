@@ -20,7 +20,7 @@ File > Open Projects from File System... > Directory...
 ### Backlog
 
 Id | En tant que... | Je veux... | Afin de... | Valeur | O(n) (h)
---- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
 1 | Joueur | initialiser une partie | commencer à jouer | 100 | 2
 2 | Joueur | choisir le nombre de joueurs | initialiser la partie | 100 | 1/2
 3 | Joueur | choisir le nom des joueurs | initialiser la partie | 50 | 1
