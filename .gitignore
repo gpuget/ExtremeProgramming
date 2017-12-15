@@ -28,4 +28,6 @@ out/
 *.iml
 
 build/
-nbproject/private/
+nbproject/
+build.xml
+manifest.mf
