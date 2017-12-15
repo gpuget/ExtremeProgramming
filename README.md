@@ -26,7 +26,7 @@ Id | En tant que... | Je veux... | Afin de... | Valeur | O(n) (h)
 3 | Joueur | choisir le nom des joueurs | initialiser la partie | 50 | 1
 4 | Joueur | recevoir 2 cartes en début de tour | constituer ma main | 100 | 1
 5 | Joueur | terminer ma partie au bout d'un certain nombre de tours | limiter le temps de jeux | 50 | 1/2
-6 | Joueur | découvrir les cartes sur la table | connaître ma combinaison | 70 | 1
+6 | Joueur | découvrir les cartes sur la table | connaître ma combinaison | 70 | 1/2
 7 | Joueur | être exclu si je n'ai plus d'argent | réduire le nombre de joueurs | 80 | 1/2
 8 | Joueur | miser | augmenter les gains du tour | 80 | 1/2
 9 | Joueur | suivre (miser le minimum pour continuer) | augmenter la somme en jeu | 80 | 1/2
@@ -52,7 +52,6 @@ Id | En tant que... | Je veux... | Afin de... | Valeur | O(n) (h)
 User story | Temps (h)
 --- | ---
 1 | 2
-2 | 1/2
 4 | 1
 8 | 1/2
 9 | 1/2
@@ -61,20 +60,13 @@ User story | Temps (h)
 12 | 1/2
 13 | 1/2
 15 | 1
-**Total** | **7 1/2**
-
-**Bonus du sprint**
-
-Scénarii | Temps (h)
---- | ---
-5 | 1/2
-**Total** | **1/2**
+**Total** | **7**
 
 ### Sprint 2
 
 User story | Temps (h)
 --- | ---
-6 | 1
+6 | 1/2
 7 | 1/2
 14 | 1
 16 | 1/2
@@ -84,17 +76,8 @@ User story | Temps (h)
 23 | 1/2
 24 | 1/2
 25 | 1/2
-**Total** | **7 1/2**
+**Total** | **7**
 
-**Bonus du sprint**
-
-Scénarii | Temps (h)
---- | ---
-3 | 1/2
-19 | 1/2
-20 | 1/2
-21 | 1/2
-**Total** | **2**
 
 ## Aide
 
