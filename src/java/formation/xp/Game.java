@@ -12,6 +12,8 @@ public class Game {
     
     private Player[] players;
     private int round;
+    private int totalBet;
+        
     
     public Game(String[] playerNames) {
         players = new Player[playerNames.length];
@@ -21,6 +23,7 @@ public class Game {
         }
         
         round = 1;
+        totalBet = 0;
     }
     
     public int getNbPlayers() {
@@ -36,6 +39,16 @@ public class Game {
             return players[positionPlayer];
         }
         return null;
+    }
+    
+    public int getTotalBet() {
+        return totalBet;
+    }
+    
+    public void bet(Player player, int amount) {
+        if (player.bet(amount)) {
+            totalBet += amount;
+        }
     }
     
 }

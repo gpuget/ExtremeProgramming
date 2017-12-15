@@ -17,5 +17,15 @@ public class GameTest extends TestCase {
         //start at round 1
         assertEquals("initialiser au tour 1", 1, testGame.getRound());
         
+        assertEquals("pot initial nul", 0, testGame.getTotalBet());
+    }
+    
+    @Test
+    public void testBet() {
+        Game testGame = new Game(new String[]{"Bob", "Cecile"});
+        
+        testGame.bet(testGame.getPlayer(0), 1);
+                
+        assertEquals("montant pot", 1, testGame.getTotalBet());
     }
 }
