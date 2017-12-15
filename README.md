@@ -66,7 +66,7 @@ User story | Temps (h)
 
 User story | Temps (h)
 --- | ---
-6 | 1/2
+2 | 1/2
 7 | 1/2
 14 | 1
 16 | 1/2
