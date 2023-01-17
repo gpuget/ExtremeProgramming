@@ -1,95 +1,55 @@
-# ExtremePrograming
+# Extreme Programming - Travaux Pratiques
 
-## Git
+**Diapositives** : https://slides.com/gpuget/extreme-programming
 
-* Forkez le projet sur votre github
-* Clonez le projet : `git clone <target-url>`
+## Consignes
 
-## Installation
+**Sujet** : Développement d'une application de gestion de places de cinéma
 
-### Eclipse
+## Partie 1 : User Story
 
-Vous avez téléchargé la version portable d'Eclipse, vous pouvez donc le lancer en allant directement dans le dossier extrait.
+**Objectifs** :
 
-Pour importer le projet :
-```
-File > Open Projects from File System... > Directory...
-```
-## Pratique (POKER)
+* Appliquer les principes _INVEST_ pour créer les _user stories_
 
-### Backlog
+**Instructions** :
 
-Id | En tant que... | Je veux... | Afin de... | Valeur | O(n) (h)
---- | --- | --- | --- | --- | ---
-1 | Joueur | initialiser une partie | commencer à jouer | 100 | 2
-2 | Joueur | choisir le nombre de joueurs | initialiser la partie | 100 | 1/2
-3 | Joueur | choisir le nom des joueurs | initialiser la partie | 50 | 1
-4 | Joueur | recevoir 2 cartes en début de tour | constituer ma main | 100 | 1
-5 | Joueur | terminer ma partie au bout d'un certain nombre de tours | limiter le temps de jeux | 50 | 1/2
-6 | Joueur | découvrir les cartes sur la table | connaître ma combinaison | 70 | 1/2
-7 | Joueur | être exclu si je n'ai plus d'argent | réduire le nombre de joueurs | 80 | 1/2
-8 | Joueur | miser | augmenter les gains du tour | 80 | 1/2
-9 | Joueur | suivre (miser le minimum pour continuer) | augmenter la somme en jeu | 80 | 1/2
-10 | Joueur | faire tapis (miser tout mon argent) | augmenter la somme en jeu | 80 | 1/2
-11 | Joueur | relancer (surenchérir) | augmenter la somme en jeu | 80 | 1/2
-12 | Joueur | passer | voir les autres mises | 80 | 1/2
-13 | Joueur | voir ma mise actuelle | décider de mon annonce | 80 | 1/2
-14 | Joueur | jouer après le joueur à ma droite | effectuer une action | 70 | 1
-15 | Joueur | voir seulement mes cartes | décider de mon annonce | 100 | 1
-16 | Joueur | voir la somme qui me reste | décider des mises | 80 | 1/2
-17 | Joueur / Spectateur | savoir quel joueur a gagné le tour | savoir la répartition des gains | 70 | 2
-18 | Joueur / Spectateur | voir la somme en jeu | connaître l'objectif | 50 | 1/2
-19 | Spectateur | découvrir les cartes sur la table | suivre le déroulement de la partie | 20 | 1/2
-20 | Spectateur | voir l'argent de tous les joueurs | suivre le déroulement de la partie | 20 | 1/2
-21 | Spectateur | voir les cartes de tous les joueurs | suivre le déroulement de la partie | 20 | 1/2
-22 | Croupier | le joueur à ma gauche mise la petite blind | initialiser le tour | 90 | 1/2
-23 | Croupier | le deuxième joueur à ma gauche mise la grande blind | initialiser le tour | 90 | 1/2
-24 | Croupier | le troisième joueur à ma gauche commence le tour | initialiser le tour | 90 | 1/2
-25 | Croupier | le joueur à ma gauche soit le prochain croupier | initialiser le prochain tour | 90 | 1/2
+* Vous devez discuter des différents types d'utilisateurs qui utiliseront l'application
+* Vous devez identifier leurs besoins et leurs attentes
+* Vous devez rédiger les _user stories_ sous la forme vu en cours
+* Vous devez le faire par groupe et respecter au mieux les principes _INVEST_
 
-### Sprint 1
+## Partie 2 : Planification
 
-User story | Temps (h)
---- | ---
-1 | 2
-4 | 1
-8 | 1/2
-9 | 1/2
-10 | 1/2
-11 | 1/2
-12 | 1/2
-13 | 1/2
-15 | 1
-**Total** | **7**
+**Objectifs** :
 
-### Sprint 2
+* Planifier les 2 prochaines itérations pour le développement de l'application
 
-User story | Temps (h)
---- | ---
-2 | 1/2
-7 | 1/2
-14 | 1
-16 | 1/2
-17 | 2
-18 | 1/2
-22 | 1/2
-23 | 1/2
-24 | 1/2
-25 | 1/2
-**Total** | **7**
+**Instructions** :
 
+* Vous devez planifier 2 _sprints_ :
+  * Pour un sprint de 3h30
+  * Pour un groupe de 6 personnes
+  * Pour des binômes
+* Vous devez définir un objectif aux _sprints_
+* Vous devez sélectionner les _user stories_ de chaque _sprints_
+* Vous devez planifier des tâches et des sous-tâches
+* Vous pouvez commencer à répartir les tâches
 
-## Aide
+## Partie 3 : Application
 
-### Cheat sheets
+**Objectifs** :
 
-* [Java](https://introcs.cs.princeton.edu/java/11cheatsheet/ "Java Programing Cheatsheet")
-* [Git](https://www.git-tower.com/blog/posts/git-cheat-sheet "Git Tower")
-* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown Cheat Sheet by Adam Pritchard")
+* Appliquer les principes de l'_Extreme Programming_ (XP) tels que :
+  * le TDD
+  * la programmation en binôme
+  * ...
+* Mettre en oeuvre les concepts de la programmation orienté objet en _Java_
+* Mettre en oeuvre une interface graphique utilisant le _framework JS React_
 
-### Docs
+**Instructions** :
 
-* [Debian](https://www.debian.org/doc/manuals/refcard/refcard "Debian Doc")
-* [Git](https://git-scm.com/documentation "Git SCM doc")
-* [Javadoc](https://docs.oracle.com/javase/8/docs/api/ "Java 8 Doc")
-* [JUnit](http://junit.org/junit4/javadoc/latest/ "JUnit Doc")
+* Vous devez développer une application de gestion de places de cinéma en utilisant le _framework_ _Spring_ ou _Spring Boot_ et _React_
+* Vous devez utiliser le _TDD_ pour écrire des cas de test pour chaque fonctionnalité de l'application **AVANT** de commencer à écrire le code
+* Vous devez utiliser la programmation en **binôme** pour écrire du code et s'entraider pour résoudre les problèmes
+* Vous devez faire des "**refactorisations**" pour améliorer la qualité et la maintenabilité du code
