@@ -1,6 +1,7 @@
 # Extreme Programming - Travaux Pratiques
 
 **Diapositives** : https://slides.com/gpuget/extreme-programming
+**User Story** : https://docs.google.com/spreadsheets/d/1vKv29ajGzqLqvjMUPhOqycrX5uS5xn2WOrzu8F4pT8k/edit?pli=1#gid=0
 
 ## Consignes
 
