@@ -16,8 +16,23 @@
 
 * Vous devez discuter des différents types d'utilisateurs qui utiliseront l'application
 * Vous devez identifier leurs besoins et leurs attentes
-* Vous devez rédiger les _user stories_ sous la forme vu en cours
+* Vous devez rédiger les _user stories_ sous la forme vue en cours
 * Vous devez le faire par groupe et respecter au mieux les principes _INVEST_
+
+**Exemples**
+
+| Id  | En tant que... | Je veux...                               | Pour...                      | Valeur |
+|-----|----------------|------------------------------------------|------------------------------|--------|
+| 1   | joueur         | voir mes cartes                          | choisir une action           | 100    |
+| 2   | spectateur     | consulter les cartes de tous les joueurs | suivre le cours de la partie | 60     |
+| ... | ...            | ...                                      | ...                          | ...    |
+
+| Ref | Étant donné...           | Quand...                  | Alors...                     |
+|-----|--------------------------|---------------------------|------------------------------|
+| 1   | un joueur sans carte     | je lui donne aucune carte | il ne peut voir aucune carte |
+| 1   | un joueur avec une carte | je lui donne 1 carte      | il peut voir ses 2 cartes    |
+| ... | ...                      | ...                       | ...                          |
+
 
 ## Partie 2 : Planification
 
