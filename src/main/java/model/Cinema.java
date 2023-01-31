@@ -5,6 +5,9 @@ public class Cinema {
     private String nom;
     private String ville;
 
+    public Cinema() {
+    }
+
     public Cinema(long id, String nom, String ville) {
         this.id = id;
         this.nom = nom;

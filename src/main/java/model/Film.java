@@ -6,6 +6,9 @@ public class Film {
     private int duree;
     private String realisateur;
 
+    public Film() {
+    }
+
     public Film(long id, String titre, int duree, String realisateur) {
         this.id = id;
         this.titre = titre;

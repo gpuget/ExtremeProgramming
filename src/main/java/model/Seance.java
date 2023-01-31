@@ -8,6 +8,9 @@ public class Seance {
     private Film film;
     private LocalDate date;
 
+    public Seance() {
+    }
+
     public Seance(long id, Cinema cinema, Film film, LocalDate date) {
         this.id = id;
         this.cinema = cinema;

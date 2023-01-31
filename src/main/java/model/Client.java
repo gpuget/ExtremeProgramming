@@ -5,6 +5,9 @@ public class Client {
     private String nom;
     private boolean isAdmin;
 
+    public Client() {
+    }
+
     public Client(long id, String nom, boolean isAdmin) {
         this.id = id;
         this.nom = nom;
