@@ -1,22 +1,22 @@
-package model;
+package fr.oxyl.formation.xp.model;
 
-public class Cinema {
+public class Client {
     private long id;
     private String nom;
-    private String ville;
+    private boolean isAdmin;
 
-    public Cinema() {
+    public Client() {
     }
 
-    public Cinema(long id, String nom, String ville) {
+    public Client(long id, String nom, boolean isAdmin) {
         this.id = id;
         this.nom = nom;
-        this.ville = ville;
+        this.isAdmin = isAdmin;
     }
 
-    public Cinema(String nom, String ville) {
+    public Client(String nom, boolean isAdmin) {
         this.nom = nom;
-        this.ville = ville;
+        this.isAdmin = isAdmin;
     }
 
     public long getId() {
@@ -35,20 +35,20 @@ public class Cinema {
         this.nom = nom;
     }
 
-    public String getVille() {
-        return ville;
+    public boolean isAdmin() {
+        return isAdmin;
     }
 
-    public void setVille(String ville) {
-        this.ville = ville;
+    public void setAdmin(boolean admin) {
+        isAdmin = admin;
     }
 
     @Override
     public String toString() {
-        return "Cinema{" +
+        return "Client{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
-                ", ville='" + ville + '\'' +
+                ", isAdmin=" + isAdmin +
                 '}';
     }
 }

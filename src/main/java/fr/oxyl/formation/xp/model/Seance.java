@@ -1,4 +1,4 @@
-package model;
+package fr.oxyl.formation.xp.model;
 
 import java.time.LocalDate;
 

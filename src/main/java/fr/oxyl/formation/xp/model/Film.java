@@ -1,4 +1,4 @@
-package model;
+package fr.oxyl.formation.xp.model;
 
 public class Film {
     private long id;
