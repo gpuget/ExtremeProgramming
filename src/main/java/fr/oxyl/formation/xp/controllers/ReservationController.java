@@ -1,6 +1,7 @@
 package fr.oxyl.formation.xp.controllers;
 
 import fr.oxyl.formation.xp.models.Reservation;
+import fr.oxyl.formation.xp.services.ReservationService;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -13,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/reservations")
 public class ReservationController {
+
+  private final ReservationService service;
+
+  public ReservationController(ReservationService service) {
+    this.service = service;
+  }
 
   private static Reservation createReservation() {
     Reservation reservation = new Reservation();
