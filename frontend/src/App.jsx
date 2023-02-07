@@ -1,42 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from "react";
 import {getReservations} from "./api/reservations";
 
 function App() {
 
-    const [title, setTitle] = useState();
+    const [reservations, setReservations] = useState();
+    const [tab,  setTab] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await getReservations();
-            setTitle(response);
+            setReservations(response);
         }
 
         fetchData();
     }, []);
 
-    console.log("App :: ", title);
+    const toggle = () => {
+        setTab(tab => !tab);
+    };
 
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    {title}
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <button onClick={toggle}>Change me</button>
+            { tab
+                ? (<div>
+                    {reservations && reservations
+                    .map(reservation => reservation.username)
+                    .map(username => (<p key={username}>{username}</p>))}
+                    </div>)
+                : (<div>
+                    {reservations && reservations
+                        .map(reservation => reservation.cinema)
+                        .map(cinema => (<p key={cinema}>{cinema}</p>))}
+                    </div>)}
         </div>
     );
 }

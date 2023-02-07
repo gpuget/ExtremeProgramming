@@ -20,7 +20,7 @@ class ReservationRepositoryTest {
   @BeforeEach
   void setUp() {
     Reservation reservation = new Reservation();
-    reservation.setId(UUID.randomUUID().toString());
+    reservation.setUuid(UUID.randomUUID().toString());
     this.repository.save(reservation);
   }
 

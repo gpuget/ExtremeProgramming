@@ -16,7 +16,7 @@ public class ReservationService {
 
   public Reservation reserve() {
     Reservation reservation = new Reservation();
-    reservation.setId(UUID.randomUUID().toString());
+    reservation.setUuid(UUID.randomUUID().toString());
     return this.repository.save(reservation);
   }
 
