@@ -7,6 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import fr.oxyl.formation.xp.persistence.ShowtimeRepository;
 import fr.oxyl.formation.xp.services.ShowtimeService;
 import java.util.Collections;
 import org.junit.jupiter.api.Test;
@@ -22,6 +23,8 @@ class ShowtimeControllerTest {
   @Autowired
   private MockMvc mockMvc;
 
+  @MockBean
+  private ShowtimeRepository showtimeRepository;
   @MockBean
   private ShowtimeService showtimeService;
 
