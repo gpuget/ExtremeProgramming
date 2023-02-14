@@ -3,16 +3,16 @@ import {getAllShowtimes} from "../api/showtimes";
 import Showtime from "./Showtime";
 import {Alert, AlertTitle} from "@mui/material";
 import Reservation from "./Reservation";
+import {reserve} from "../api/reservations";
 
 function ShowtimeList() {
     const [showtimes, setShowtimes] = useState([]);
     const [reservation, setReservation] = useState();
 
-    const handleClick = (showtime) => {
-        setReservation({
-            id: "XXX",
-            showtime: showtime
-        });
+    const handleClick = async (showtime) => {
+        const reservation = await reserve(showtime);
+        console.log(reservation)
+        setReservation(reservation);
     }
 
     useEffect(() => {
