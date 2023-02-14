@@ -19,7 +19,7 @@ class ShowtimeRepositoryTest {
 
     List<Showtime> showtimes = this.repository.findAll();
 
-    assertThat(showtimes).isNotNull().hasSize(2);
+    assertThat(showtimes).isNotNull().hasSize(6);
   }
 
 }

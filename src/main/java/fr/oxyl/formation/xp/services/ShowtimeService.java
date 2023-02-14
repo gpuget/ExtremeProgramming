@@ -1,9 +1,7 @@
 package fr.oxyl.formation.xp.services;
 
-import fr.oxyl.formation.xp.dto.MockData;
-import fr.oxyl.formation.xp.dto.ShowtimeDto;
+import fr.oxyl.formation.xp.models.Showtime;
 import fr.oxyl.formation.xp.persistence.ShowtimeRepository;
-import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +14,7 @@ public class ShowtimeService {
     this.repository = repository;
   }
 
-  public List<ShowtimeDto> getAllShowtimes() {
-    return Arrays.asList(MockData.SHOWTIME_1, MockData.SHOWTIME_2);
+  public List<Showtime> getAllShowtimes() {
+    return this.repository.findAll();
   }
 }

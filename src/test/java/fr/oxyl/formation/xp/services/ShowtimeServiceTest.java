@@ -1,9 +1,16 @@
 package fr.oxyl.formation.xp.services;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
-import fr.oxyl.formation.xp.dto.ShowtimeDto;
+import fr.oxyl.formation.xp.models.Cinema;
+import fr.oxyl.formation.xp.models.Movie;
+import fr.oxyl.formation.xp.models.Showtime;
 import fr.oxyl.formation.xp.persistence.ShowtimeRepository;
+import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,8 +28,25 @@ class ShowtimeServiceTest {
 
   @Test
   void getAllShowtimes() {
-    List<ShowtimeDto> showtimes = this.service.getAllShowtimes();
+    Cinema cinema = new Cinema();
+    cinema.setId(1);
+    cinema.setName("cinema1");
+    Movie movie = new Movie();
+    movie.setId(1);
+    movie.setTitle("movie1");
+    movie.setTitle("director1");
+    Showtime showtime = new Showtime();
+    showtime.setId(1);
+    showtime.setMovie(movie);
+    showtime.setCinema(cinema);
+    showtime.setStartTime(LocalDateTime.MIN);
+    showtime.setEndTime(LocalDateTime.MAX);
+    List<Showtime> showtimes = Arrays.asList(showtime);
+    when(this.repository.findAll()).thenReturn(showtimes);
 
-    assertThat(showtimes).hasSize(2);
+    List<Showtime> result = this.service.getAllShowtimes();
+
+    verify(this.repository, times(1)).findAll();
+    assertThat(result).hasSize(1);
   }
 }
