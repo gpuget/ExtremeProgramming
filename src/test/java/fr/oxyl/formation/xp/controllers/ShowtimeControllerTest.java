@@ -24,7 +24,7 @@ class ShowtimeControllerTest {
     this.mockMvc.perform(get("/showtimes"))
         .andExpect(status().isOk())
         .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-        .andExpect(jsonPath("$", hasSize(0)));
+        .andExpect(jsonPath("$", hasSize(2)));
   }
 
 }

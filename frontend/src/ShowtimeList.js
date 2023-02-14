@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Card, CardContent, Typography} from "@mui/material";
-
-import cinemaData from "./data.json"
+import {getAllShowtimes} from "./api/showwtimes";
 
 function ShowtimeList() {
     const [showtimes, setShowtimes] = useState([]);
@@ -9,7 +8,7 @@ function ShowtimeList() {
     useEffect(() => {
         // Récupérer les séances depuis votre API ici
         const fetchShowtimes = async () => {
-            const data = cinemaData.flatMap(data => data.cinema.showtimes);
+            const data = await getAllShowtimes();
             setShowtimes(data);
         };
         fetchShowtimes();
