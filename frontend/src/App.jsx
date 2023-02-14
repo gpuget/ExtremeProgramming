@@ -1,4 +1,4 @@
-import ShowtimeList from "./ShowtimeList";
+import ShowtimeList from "./components/ShowtimeList";
 
 function App() {
     return <ShowtimeList/>
