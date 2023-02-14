@@ -1,5 +1,7 @@
+import ShowtimeList from "./ShowtimeList";
+
 function App() {
-    return <div>Hello World</div>
+    return <ShowtimeList/>
 }
 
 export default App;

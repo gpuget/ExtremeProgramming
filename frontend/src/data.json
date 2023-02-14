@@ -1,0 +1,58 @@
+[
+  {
+    "cinema": {
+      "name": "Cinéma Le Majestic",
+      "location": "Paris, France",
+      "movies": [
+        {
+          "title": "Inception",
+          "release_date": "2010-07-16",
+          "director": "Christopher Nolan"
+        }
+      ],
+      "showtimes": [
+        {
+          "movie": {
+            "title": "Inception",
+            "release_date": "2010-07-16",
+            "director": "Christopher Nolan"
+          },
+          "start_time": "2022-12-04 15:00:00",
+          "end_time": "2022-12-04 17:48:00",
+          "cinema": {
+            "name": "Cinéma Le Majestic",
+            "location": "Paris, France"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "cinema": {
+      "name": "Cinéma Le Pathé",
+      "location": "Lyon, France",
+      "movies": [
+        {
+          "title": "The Dark Knight",
+          "release_date": "2008-07-18",
+          "director": "Christopher Nolan"
+        }
+      ],
+      "showtimes": [
+        {
+          "movie": {
+            "title": "The Dark Knight",
+            "release_date": "2008-07-18",
+            "director": "Christopher Nolan"
+          },
+          "start_time": "2022-12-05 19:00:00",
+          "end_time": "2022-12-05 21:45:00",
+          "cinema": {
+            "name": "Cinéma Le Pathé",
+            "location": "Lyon, France"
+          }
+        }
+      ]
+    }
+  }
+]
